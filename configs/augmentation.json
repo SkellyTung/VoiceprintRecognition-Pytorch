@@ -6,7 +6,7 @@
       "min_snr_dB": 10,
       "max_snr_dB": 50,
       "repetition": 2,
-      "noise_dir": "dataset/noise/"
+      "noise_dir": "...dataset/noise/"
     },
     "prob": 0.0
   },
