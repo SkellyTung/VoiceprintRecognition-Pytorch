@@ -8,7 +8,7 @@ from pydub import AudioSegment
 
 
 # 生成数据列表
-def get_data_list(infodata_path, zhvoice_path):
+def get_data_list(infodata_path, list_path, zhvoice_path, to_wav=True):
     print('正在读取标注文件...')
     with open(infodata_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -65,7 +65,10 @@ def main(infodata_path, list_path, zhvoice_path, to_wav=True, num_workers=2):
         if text is None or text != 'y':
             return
     data_all = []
-    data = get_data_list(infodata_path=infodata_path, zhvoice_path=zhvoice_path)
+    list_path = 'dataset/zhvoice/text/data_list.txt'  # 数据列表文件的路径
+
+    data = get_data_list(infodata_path='C:/Users/iec920391/VoiceprintRecognition_Pytorch/dataset/zhvoice/text/infodata.json', zhvoice_path='C:/Users/iec920391/VoiceprintRecognition_Pytorch/dataset/zhvoice/audio',
+                         list_path=list_path)
     if to_wav:
         print('准备把MP3总成WAV格式...')
         split_d = split_data(data, num_workers)
