@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": "a_1.wav",
+            "file_path": "C:/Users/iec920391/VoiceprintRecognition_Pytorch/dataset/zhvoice/audio/a_1.wav",
+            "label": "a_1"
+        },
+        {
+            "id": "a_2.wav",
+            "file_path": "C:/Users/iec920391/VoiceprintRecognition_Pytorch/dataset/zhvoice/audio/a_2.wav",
+            "label": "a_2"
+        },
+        {
+            "id": "b_1.wav",
+            "file_path": "C:/Users/iec920391/VoiceprintRecognition_Pytorch/dataset/zhvoice/audio/b_1.wav",
+            "label": "b_1"
+        },
+        {
+            "id": "b_2.wav",
+            "file_path": "C:/Users/iec920391/VoiceprintRecognition_Pytorch/dataset/zhvoice/audio/b_2.wav",
+            "label": "b_2"
+        }
+    ]
+}
